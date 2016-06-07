@@ -1,9 +1,7 @@
-﻿
-
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $packageName = 'xmedia-recode'
 $softwareName = 'XMedia Recode*'
-$installerType = 'EXE' 
+$installerType = 'exe' 
 $silentArgs = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
 $validExitCodes = @(0)
 $uninstalled = $false
