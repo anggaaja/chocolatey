@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>lamexp</id>
+    <title>LameXP (Install)</title>
+    <version>4.13</version>
+    <authors>LoRd_MuldeR</authors>
+    <owners>angga</owners>
+	<iconUrl>https://raw.githubusercontent.com/anggaaja/chocolatey/master/lamexp/assets/lamexplogo.png</iconUrl>
+    <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
+    <description>LameXP is a graphical user-interface (front-end) for various of audio encoders: It allows you to convert your audio files from one audio format to another one in the most simple way. Despite its name, LameXP is not only a front-end for the LAME MP3 encoder, but supports a wide range of output formats, including MP3, Ogg Vorbis, Opus, AAC/MP4, FLAC, AC-3 and Wave Audio. The number of supported input formats is even bigger! Furthermore LameXP not only runs on Windows XP, but also on Windows 7, 8 and 10 as well as many other operating systems.</description>
+    <projectUrl>http://muldersoft.com/#lamexp</projectUrl>
+    <packageSourceUrl>https://github.com/anggaaja/chocolatey/tree/master/lamexp/4.13</packageSourceUrl>
+    <tags>admin audio-converter audio-transcoder mp3</tags>
+    <copyright>Copyright © 2004-2016 LoRd_MuldeR</copyright>
+	<docsUrl>https://github.com/lordmulder/LameXP/blob/master/doc/Manual.md</docsUrl>
+	<licenseUrl>https://github.com/lordmulder/LameXP/blob/master/Copying.txt</licenseUrl>
+	<bugTrackerUrl>https://github.com/lordmulder/LameXP/issues</bugTrackerUrl>
+	<projectSourceUrl>https://github.com/lordmulder/LameXP</projectSourceUrl>
+	<mailingListUrl>http://forum.doom9.org/showthread.php?t=157726</mailingListUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>####Changes between v4.12 and v4.13 [2015-12-12]:
+* Upgraded build environment to Microsoft Visual Studio 2015 with Update-1
+* Apply the original file's "creation" and "last modified" date/time to the output file (optional)
+* Updated Vorbis encoder to OggEnc v2.88 (2015-09-10), using libvorbis v1.3.5 and aoTuV b6.03_2015
+* Updated MediaInfo to v0.7.78 (2015-10-02), compiled with ICL 15.0 and MSVC 12.0
+* Fixed resampling bug with Vorbis encoder, regression in OggEnc v2.87
+* Fixed creation of Monkey's Audio (APE) files, when no meta data is being embedded
+* Updated language files (big thank-you to all contributors !!!)</releaseNotes>
+  </metadata>
+</package>
