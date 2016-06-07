@@ -8,7 +8,7 @@
     <version>3.3.2.5</version>
     <authors>Sebastian Dörfler</authors>
     <owners>angga</owners>
-	<iconUrl>https://raw.githubusercontent.com/anggaaja/chocolatey/master/xmedia-recode/assets/xmediarecodelogo.jpg</iconUrl>
+	<iconUrl>https://raw.githubusercontent.com/anggaaja/chocolatey/master/xmedia-recode/assets/xmediarecodelogo.png</iconUrl>
     <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
     <description>
 	XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
@@ -27,8 +27,9 @@
     </description>
     <projectUrl>http://www.xmedia-recode.de</projectUrl>
     <packageSourceUrl>https://github.com/anggaaja/chocolatey/tree/master/xmedia-recode/3.3.2.5</packageSourceUrl>
-    <tags>dvd ripper, blu-rays ripper, video converter, audio converter</tags>
+    <tags>admin dvd-ripper video-converter audio-converter</tags>
     <copyright>Copyright © 2007-2015 Sebastian Dörfler</copyright>
+	<docsUrl>http://www.xmedia-recode.de/hilfe/xmediarecode.html</docsUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>
 	####XMedia Recode 3.3.2.5
