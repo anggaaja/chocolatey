@@ -12,17 +12,17 @@
     <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
     <description>XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
 
-	XMedia Recode can only convert unprotected DVDs.
+XMedia Recode can only convert unprotected DVDs.
 
-	XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3GP, ASF to FLV, ASF to MP4, AVI to FLV, AVI to 3GP, FLAC to MP3, FLAC to WMA, FLV to 3GP, FLV to Mp3, DVD to 3GP, DVD to AC3, DVD to AVI, DVD to MP3, DVD to MP4, DVD to MOV, DVD to SVCD, DVD to VCD, DVD to WMV, OGG to MP3, OGG to WMA, MPEG to AVI, MP2 to MP3, MP4 to FLV, MP4 to AVI, MOV to 3GP, MOV to AVI, MOV to FLV, WMA to MP3, WMV to FLV, WAV to MP3
+XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3GP, ASF to FLV, ASF to MP4, AVI to FLV, AVI to 3GP, FLAC to MP3, FLAC to WMA, FLV to 3GP, FLV to Mp3, DVD to 3GP, DVD to AC3, DVD to AVI, DVD to MP3, DVD to MP4, DVD to MOV, DVD to SVCD, DVD to VCD, DVD to WMV, OGG to MP3, OGG to WMA, MPEG to AVI, MP2 to MP3, MP4 to FLV, MP4 to AVI, MOV to 3GP, MOV to AVI, MOV to FLV, WMA to MP3, WMV to FLV, WAV to MP3
 
-	####System Requirements
+####System Requirements
 
-    *Processor: Intel / AMD compatible at 1 GHz or higher
-    *RAM: 1 GBx
-    *Windows 7, 8, 8.1, 10
-    *DirectX: DirectX 9
-    *Nvidia CUDA: Nvidia GPU driver 347.09 or higher</description>
+*Processor: Intel / AMD compatible at 1 GHz or higher
+*RAM: 1 GBx
+*Windows 7, 8, 8.1, 10
+*DirectX: DirectX 9
+*Nvidia CUDA: Nvidia GPU driver 347.09 or higher</description>
     <projectUrl>http://www.xmedia-recode.de</projectUrl>
     <packageSourceUrl>https://github.com/anggaaja/chocolatey/tree/master/xmedia-recode/3.3.2.5</packageSourceUrl>
     <tags>admin dvd-ripper video-converter audio-converter</tags>
@@ -31,15 +31,15 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <releaseNotes>####XMedia Recode 3.3.2.5
 
-	Release Date: 04.06.2016
+Release Date: 04.06.2016
 
-    *Update of ffmpeg
-    *Update of x265 (1.9 +192) Codec
-    *Update of the Italian language file
-    *Update of the Japanese language file
+*Update of ffmpeg
+*Update of x265 (1.9 +192) Codec
+*Update of the Italian language file
+*Update of the Japanese language file
 
-	####Troubleshooting
+####Troubleshooting
 
-    *Fixed minor bugs</releaseNotes>
+*Fixed minor bugs</releaseNotes>
   </metadata>
 </package>
