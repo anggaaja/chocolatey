@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop';
 $packageName = 'lamexp'
-$softwareName = 'LameXP*'
-$installerType = 'exe' 
+$softwareName = 'LameXP v4.13'
+$installerType = 'EXE' 
 $silentArgs = '/S'
 $validExitCodes = @(0)
 $uninstalled = $false

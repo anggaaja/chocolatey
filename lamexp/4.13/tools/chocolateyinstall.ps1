@@ -14,6 +14,9 @@ $packageArgs = @{
   checksumType  = 'md5'
 }
 
+$regAdd = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)\regAdd.ps1"
+Start-ChocolateyProcessAsAdmin "& `'$regAdd`'"
+
 Install-ChocolateyPackage @packageArgs
 
 
