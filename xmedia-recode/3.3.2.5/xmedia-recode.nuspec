@@ -18,11 +18,11 @@ XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3
 
 ####System Requirements
 
-*Processor: Intel / AMD compatible at 1 GHz or higher
-*RAM: 1 GBx
-*Windows 7, 8, 8.1, 10
-*DirectX: DirectX 9
-*Nvidia CUDA: Nvidia GPU driver 347.09 or higher</description>
+* Processor: Intel / AMD compatible at 1 GHz or higher
+* RAM: 1 GBx
+* Windows 7, 8, 8.1, 10
+* DirectX: DirectX 9
+* Nvidia CUDA: Nvidia GPU driver 347.09 or higher</description>
     <projectUrl>http://www.xmedia-recode.de</projectUrl>
     <packageSourceUrl>https://github.com/anggaaja/chocolatey/tree/master/xmedia-recode/3.3.2.5</packageSourceUrl>
     <tags>admin dvd-ripper video-converter audio-converter</tags>
@@ -33,10 +33,10 @@ XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3
 
 Release Date: 04.06.2016
 
-*Update of ffmpeg
-*Update of x265 (1.9 +192) Codec
-*Update of the Italian language file
-*Update of the Japanese language file
+* Update of ffmpeg
+* Update of x265 (1.9 +192) Codec
+* Update of the Italian language file
+* Update of the Japanese language file
 
 ####Troubleshooting
 
