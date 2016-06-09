@@ -5,38 +5,34 @@ $installerType = 'EXE'
 $silentArgs = '/S'
 $validExitCodes = @(0)
 $uninstalled = $false
-$local_key     = 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*'
-$machine_key   = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\*'
-$machine_key6432 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\*'
-
-$key = Get-ItemProperty -Path @($machine_key6432,$machine_key, $local_key) `
-                        -ErrorAction SilentlyContinue `
-         | ? { $_.DisplayName -like "$softwareName" }
-
-if ($key.Count -eq 1) {
-  $key | % { 
-    $file = "$($_.UninstallString)"
-
-    if ($installerType -eq 'MSI') {
-      $silentArgs = "$($_.PSChildName) $silentArgs"
-
-      $file = ''
-    }
+$processor = Get-WmiObject Win32_Processor
+$is64bit = $processor.AddressWidth -eq 64
+$entry64 = 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\{FBD7A67D-D700-4043-B54F-DD106D00F308}'
+$entry32 = 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{FBD7A67D-D700-4043-B54F-DD106D00F308}'
+ 
+if ($is64bit) {
+  $setupExePath = (Get-ItemProperty -Path $entry64).QuietUninstallString
+}
+else {
+  $setupExePath = (Get-ItemProperty -Path $entry32).QuietUninstallString
+}
+	$scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
+	$ahkFile = Join-Path $scriptPath "lamexpUninstall.ahk"
+	$ahkRun = "$Env:Temp\$(Get-Random).ahk"
+ 
+	Copy-Item $ahkFile "$ahkRun" -Force
+	$ahkProc = Start-Process -FilePath 'AutoHotKey' `
+				-ArgumentList $ahkRun `
+				-PassThru
+	Write-Debug "$ahkRun start time:`t$($ahkProc.StartTime.ToShortTimeString())"
+	Write-Debug "$ahkRun process ID:`t$($ahkProc.Id)"
 
     Uninstall-ChocolateyPackage -PackageName $packageName `
                                 -FileType $installerType `
                                 -SilentArgs "$silentArgs" `
                                 -ValidExitCodes $validExitCodes `
-                                -File "$file"
-  }
-} elseif ($key.Count -eq 0) {
-  Write-Warning "$packageName has already been uninstalled by other means."
-} elseif ($key.Count -gt 1) {
-  Write-Warning "$key.Count matches found!"
-  Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
-  Write-Warning "Please alert package maintainer the following keys were matched:"
-  $key | % {Write-Warning "- $_.DisplayName"}
-}
-
+                                -File "$setupExePath"
+	
+	Remove-Item "$ahkRun" -Force
 
 
