@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>musicbee</id>
+    <title>MusicBee (Install)</title>
+    <version>3.0.5995</version>
+    <authors>Steven Mayall</authors>
+    <owners>Werner van Deventer, angga</owners>
+    <summary>MusicBee makes it easy to organize, find and play music files on your computer, on portable devices and on the web.</summary>
+    <description>If you are looking for an application geared toward managing extensive music collections, easy to use and with a comprehensive feature set - MusicBee is that application.
+
+MusicBee makes it easy to organize, find and play music files on your computer, on portable devices and on the web.
+
+####Screenshot
+![MusicBee Screenshot](https://raw.githubusercontent.com/anggaaja/chocolatey/master/musicbee/assets/musicbeescreenshot.png)
+</description>
+    <projectUrl>http://getmusicbee.com/</projectUrl>
+    <tags>admin musicbee audio music player media mp3 tagger</tags>
+    <copyright>Copyright © Steven Mayall</copyright>
+    <licenseUrl>http://musicbee.wikia.com/wiki/FAQ</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://raw.githubusercontent.com/anggaaja/chocolatey/master/musicbee/assets/musicbeelogo.png</iconUrl>
+	<dependencies>
+        <dependency id="autohotkey.portable" />
+	</dependencies>
+	<bugTrackerUrl>http://getmusicbee.com/forum/index.php?board=3.0</bugTrackerUrl>
+	<docsUrl>http://musicbee.wikia.com/wiki/MusicBee_Wiki</docsUrl>
+	<packageSourceUrl>https://github.com/brutaldev/chocolatey-packages/tree/master/MusicBee</packageSourceUrl>
+    <releaseNotes>####3.0.5995
+
+* Various bug fixes and some UI improvements
+
+* For details see: [MusicBee 3 Latest Patch](http://getmusicbee.com/forum/index.php?topic=18462.0)</releaseNotes>
+  </metadata>
+</package>
