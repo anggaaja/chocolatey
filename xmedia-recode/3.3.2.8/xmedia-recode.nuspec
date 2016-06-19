@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>xmedia-recode</id>
+    <title>XMedia Recode (Install)</title>
+    <version>3.3.2.8</version>
+    <authors>Sebastian Dörfler</authors>
+    <owners>angga</owners>
+	<iconUrl>https://raw.githubusercontent.com/anggaaja/chocolatey/master/xmedia-recode/assets/xmediarecodelogo.png</iconUrl>
+    <summary>XMedia Recode is a free All-In-One video converter and audio converter tool</summary>
+    <description>XMedia Recode can convert almost all known audio and video formats, including 3GP, 3GPP, 3GPP2, AAC, AC3, ADTS, AMR, ASF, AVI, AVISynth, DVD, FLAC, FLV, H.261, H.263, H.264, H.265, M4A , M1V, M2V, M4V, Matroska (MKV), MMF, MPEG-1, MPEG-2, MPEG-4, TS, TRP, MP2, MP3, MP4, MP4V, MOV, QT, OGG, PSP, RM, (S ) VCD, SWF, VOB, WAV, WebM, WMA and WMV.
+
+XMedia Recode can only convert unprotected DVDs.
+
+XMedia Recode converts: 3GP to AVI, 3GP to FLV, AC3 to MP3, AC3 to WAV, ASF to 3GP, ASF to FLV, ASF to MP4, AVI to FLV, AVI to 3GP, FLAC to MP3, FLAC to WMA, FLV to 3GP, FLV to Mp3, DVD to 3GP, DVD to AC3, DVD to AVI, DVD to MP3, DVD to MP4, DVD to MOV, DVD to SVCD, DVD to VCD, DVD to WMV, OGG to MP3, OGG to WMA, MPEG to AVI, MP2 to MP3, MP4 to FLV, MP4 to AVI, MOV to 3GP, MOV to AVI, MOV to FLV, WMA to MP3, WMV to FLV, WAV to MP3
+
+
+####Screenshot
+![XMedia Recode Screenshot](https://raw.githubusercontent.com/anggaaja/chocolatey/master/xmedia-recode/assets/xmedia-recodescreenshot.png)
+
+####System Requirements
+
+* Processor: Intel / AMD compatible at 1 GHz or higher
+* RAM: 1 GB
+* Windows 7, 8, 8.1, 10
+* DirectX: DirectX 9
+* Nvidia CUDA: Nvidia GPU driver 347.09 or higher</description>
+    <projectUrl>http://www.xmedia-recode.de</projectUrl>
+    <packageSourceUrl>https://github.com/anggaaja/chocolatey/tree/master/xmedia-recode/3.3.2.8</packageSourceUrl>
+    <tags>admin dvd-ripper video-converter audio-converter</tags>
+    <copyright>Copyright © 2007-2015 Sebastian Dörfler</copyright>
+	<docsUrl>http://www.xmedia-recode.de/hilfe/xmediarecode.html</docsUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>####XMedia Recode 3.3.2.8
+
+Release Date: 18.06.2016
+
+* Update of ffmpeg
+* Update of x265 (1.9 +205) Codec
+* Update of the French language file
+* Added Greek language file
+* H.265 Codec: New options have been added (Spatial/Intra)
+
+####Troubleshooting
+
+* Fixed minor bugs</releaseNotes>
+  </metadata>
+</package>
